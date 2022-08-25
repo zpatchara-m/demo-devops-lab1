@@ -11,3 +11,10 @@ jobs:
         steps:
             - name: Start job
               run: echo 'Hello DevOps'   
+            - name: Second Step
+              run: echo 'This is second step'
+    second-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Start Second job
+              run: echo 'Hello Second Job'
